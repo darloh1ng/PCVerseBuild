@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PCVerseBuild</title>
+  <link rel="shortcut icon" href="assets/icons/logo.jpg" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Первый российский конструктор ПК с AI-помощником и 2.5D визуализацией. Проверка совместимости, ручные цены, сообщество сборщиков." />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__logo">
+          <span class="header__logo-pc">PC</span>
+          <span class="header__logo-verse">Verse</span>
+          <span class="header__logo-build">Build</span>
+        </div>
+        
+        <nav class="header__nav">
+          <a href="pages/constructor.html" class="header__nav-link">Конструктор</a>
+          <a href="pages/components.html" class="header__nav-link">Комплектующие</a>
+          <a href="pages/community.html" class="header__nav-link">Сообщество</a>
+          <a href="pages/guides.html" class="header__nav-link">Видео-гайды</a>
+        </nav>
+        
+        <div class="header__actions">
+          <div class="header__search">
+            <span class="header__search-icon">🔍</span>
+            <input type="text" placeholder="Поиск..." class="header__search-input" />
+          </div>
+          
+          <div class="header__buttons">
+            <button class="header__theme-btn">🌙</button>
+            <button class="header__signin">Sign in</button>
+            <button class="header__burger">☰</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">PCVerseBuild</h1>
+        <h2 class="hero__subtitle">Собирайте ПК с открытым исходным кодом знаний</h2>
+        <p class="hero__description">Первый конструктор с AI-помощником, 2.5D визуализацией и сообществом сборщиков</p>
+        
+        <div class="hero__buttons">
+          <button class="hero__btn hero__btn_primary">Создать сборку</button>
+          <button class="hero__btn hero__btn_secondary">Попробовать демо</button>
+        </div>
+        
+        <div class="stats">
+          <div class="stats__item">
+            <span class="stats__number">15,834</span>
+            <span class="stats__label">сборок создано</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__number">1,204</span>
+            <span class="stats__label">активных сборщиков</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__number">4.9</span>
+            <span class="stats__label">средний рейтинг</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__number">247</span>
+            <span class="stats__label">онлайн сейчас</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="features">
+      <div class="container">
+        <h2 class="features__title">Возможности PCVerseBuild</h2>
+        <p class="features__subtitle">Всё, что нужно для идеальной сборки</p>
+        <div class="slider">
+          <div class="slider__track" id="sliderTrack">
+          
+            <div class="slider__slide">
+              <div class="slider__icon slider__icon_blue"></div>
+              <h3 class="slider__title">2.5D Визуализация</h3>
+              <p class="slider__text">Смотрите вашу сборку в фотореалистичном 2.5D с 5 разными ракурсами. Интерактивная модель позволяет увидеть каждый компонент в деталях.</p>
+              <a href="#" class="slider__link">Узнать больше →</a>
+            </div>
+            
+            <div class="slider__slide">
+              <div class="slider__icon slider__icon_purple"></div>
+              <h3 class="slider__title">AI-Помощник</h3>
+              <p class="slider__text">Умный помощник запоминает контекст диалога, понимает "это" без объяснений и помогает подобрать идеальные компоненты под ваш бюджет.</p>
+              <a href="#" class="slider__link">Узнать больше →</a>
+            </div>
+            
+            <div class="slider__slide">
+              <div class="slider__icon slider__icon_green"></div>
+              <h3 class="slider__title">Умная совместимость</h3>
+              <p class="slider__text">Автоматическая проверка всех компонентов на совместимость. Система предупредит о конфликтах и предложит альтернативные решения.</p>
+              <a href="#" class="slider__link">Узнать больше →</a>
+            </div>
+            
+            <div class="slider__slide">
+              <div class="slider__icon slider__icon_orange"></div>
+              <h3 class="slider__title">Сообщество</h3>
+              <p class="slider__text">Делитесь своими сборками, участвуйте в конкурсах, получайте оценки и комментарии от других энтузиастов.</p>
+              <a href="#" class="slider__link">Узнать больше →</a>
+            </div>
+            
+            <div class="slider__slide">
+              <div class="slider__icon slider__icon_red"></div>
+              <h3 class="slider__title">Интерактивные гайды</h3>
+              <p class="slider__text">Обучающие видео с возможностью задавать вопросы AI. Смотрите гайды и сразу применяйте знания в конструкторе.</p>
+              <a href="#" class="slider__link">Узнать больше →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="workflow">
+      <div class="container">
+        <h2 class="workflow__title">Рабочий процесс PCVerseBuild</h2>
+        <div class="workflow__steps"> <!-- элемент-контейнер -->
+          <div class="workflow__step">
+            <div class="workflow__step-number">1</div>
+            <h3 class="workflow__step-title">Выберите компоненты</h3>
+            <p class="workflow__step-description">Подберите процессор, видеокарту, память и другие комплектующие из нашей базы</p>
+          </div>
+          <div class="workflow__step">
+            <div class="workflow__step-number">2</div>
+            <h3 class="workflow__step-title">AI проверит совместимость</h3>
+            <p class="workflow__step-description">Умный помощник проверит все компоненты на совместимость и даст рекомендации</p>
+          </div>
+          <div class="workflow__step">
+            <div class="workflow__step-number">3</div>
+            <h3 class="workflow__step-title">Смотрите в 2.5D</h3>
+            <p class="workflow__step-description">Визуализируйте сборку в фотореалистичном 2.5D с разных ракурсов</p>
+          </div>
+          <div class="workflow__step">
+            <div class="workflow__step-number">4</div>
+            <h3 class="workflow__step-title">Делитесь с сообществом</h3>
+            <p class="workflow__step-description">Публикуйте сборку, получайте отзывы и вдохновляйте других сборщиков</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="resources">
+      <div class="container">
+        <h2 class="resources__title">Ресурсы и обучение</h2>
+        <p class="resources__subtitle">Изучайте, смотрите и совершенствуйте свои навыки</p>
+        <div class="resources__videos">
+          <h3 class="resources__videos-title">Видео-гайды</h3>
+          <div class="resources__videos-grid">
+            
+            <article class="video-card">
+              <div class="video-card__preview">
+                <img src="https://img.youtube.com/vi/hr-siRhvApM/maxresdefault.jpg" alt="Превью" class="video-card__image">
+                <span class="video-card__badge">Видео</span>
+                <span class="video-card__duration">25:55</span>
+              </div>
+              <h4 class="video-card__title">КАК СОБРАТЬ КОМПЬЮТЕР САМОМУ? / ГАЙД ПО СБОРКЕ ИГРОВОГО ПК С НУЛЯ ДЛЯ НАЧИНАЮЩИХ НОВИЧКОВ</h4>
+              <p class="video-card__author">KOMPUKTER</p>
+              <a href="https://youtu.be/hr-siRhvApM" target="_blank" class="video-card__button">Смотреть</a>
+            </article>
+            
+            <article class="video-card">
+              <div class="video-card__preview">
+                <img src="https://img.youtube.com/vi/8wBXpG76a-s/maxresdefault.jpg" alt="Превью" class="video-card__image">
+                <span class="video-card__badge">Видео</span>
+                <span class="video-card__duration">11:03</span>
+              </div>
+              <h4 class="video-card__title">ПОДБИРАЕМ КОМПЛЕКТУЮЩИЕ ДЛЯ КОМПЬЮТЕРА ПРАВИЛЬНО / РУКОВОДСТВО ПО ВЫБОРУ ЖЕЛЕЗА ДЛЯ ПК</h4>
+              <p class="video-card__author">Danila Maksimov</p>
+              <a href="https://youtu.be/8wBXpG76a-s" target="_blank" class="video-card__button">Смотреть</a>
+            </article>
+            
+            <article class="video-card">
+              <div class="video-card__preview">
+                <img src="https://img.youtube.com/vi/jQBanAMlXr0/maxresdefault.jpg" alt="Превью" class="video-card__image">
+                <span class="video-card__badge">Видео</span>
+                <span class="video-card__duration">45:52</span>
+              </div>
+              <h4 class="video-card__title">ЧТО ДЕЛАТЬ ПОСЛЕ СБОРКИ ПК? КАК НАСТРОИТЬ КОМПЬЮТЕР/WINDOWS 2025! ПОЛНАЯ НАСТРОЙКА ПК</h4>
+              <p class="video-card__author">Welson</p>
+              <a href="https://youtu.be/jQBanAMlXr0" target="_blank" class="video-card__button">Смотреть</a>
+            </article>
+          </div>
+        </div>
+        <div class="resources__articles">
+          <h3 class="resources__articles-title">Статьи</h3>
+          <div class="resources__articles-grid">
+          
+            <article class="article-card">
+              <h4 class="article-card__title">Как понять, что пора обновить игровой компьютер</h4>
+              <span class="article-card__badge-new">NEW</span>
+              <p class="article-card__description">Низкий FPS, вылеты, долгие загрузки, фризы — разбираем признаки устаревшего ПК и объясняем, какие компоненты нужно менять в первую очередь.</p>
+              <div class="article-card__meta">
+                <span class="article-card__source">HYPERPC Blog</span>
+                <span class="article-card__date">6 февраля 2026</span>
+              </div>
+              <a href="https://hyperpc.ru/blog/service/time-to-upgrade-gaming-computer" target="_blank" class="article-card__link">Читать →</a>
+            </article>
+            
+            <article class="article-card">
+              <h4 class="article-card__title">Какой блок питания выбрать для видеокарты</h4>
+              <p class="article-card__description">Разбираем мифы о рекомендуемой мощности, учимся рассчитывать реальное энергопотребление и объясняем, почему не стоит доверять онлайн-калькуляторам.</p>
+              <div class="article-card__meta">
+                <span class="article-card__source">HYPERPC Blog</span>
+                <span class="article-card__date">6 февраля 2026</span>
+              </div>
+              <a href="https://hyperpc.ru/blog/service/choose-power-supply-for-videocard" target="_blank" class="article-card__link" target="_blank" class="article-card__link">Читать →</a>
+            </article>
+            
+            <article class="article-card">
+              <h4 class="article-card__title">Чем отличается дешевая оперативная память от дорогой</h4>
+              <p class="article-card__description">Тактовая частота, тайминги, разгонные профили, радиаторы и подсветка — за что на самом деле вы платите при покупке ОЗУ и стоит ли переплачивать.</p>
+              <div class="article-card__meta">
+                <span class="article-card__source">HYPERPC Blog</span>
+                <span class="article-card__date">6 февраля 2026</span>
+              </div>
+              <a href="https://hyperpc.ru/blog/service/difference-between-cheap-expensive-ram" target="_blank" class="article-card__link" target="_blank" class="article-card__link">Читать →</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="popular-builds"></section>
+    
+    <section class="cta"></section>
+    
+    <footer class="footer"></footer>
+</body>
+</html>
