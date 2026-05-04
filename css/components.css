@@ -153,5 +153,11 @@ body {
 }
 
 .header__signin:hover {
-  background: var(--color-canvas-subtle); 
+  background: var(--color-canvas-subtle);
+}
+
+.header__content,
+.header__left,
+.header__actions {
+  user-select: none;
 }
