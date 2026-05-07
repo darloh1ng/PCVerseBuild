@@ -161,3 +161,34 @@ body {
 .header__actions {
   user-select: none;
 }
+
+.hero {
+  position: relative;
+  background: var(--color-canvas-default);
+  border-bottom: 2px solid var(--color-border-default);
+  padding-block: 6rem;
+  overflow: hidden;
+}
+
+.hero__glow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 300px;
+  background: rgba(96, 165, 250, 0.05);
+  border-radius: 50%;
+  filter: blur(48px);
+  pointer-events: none
+}
+
+.hero__title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #ffffff, #d1d5db, #9ca3af);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
