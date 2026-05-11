@@ -54,7 +54,8 @@
         <div class="hero__content">
           <h1 class="hero__title">PCVerseBuild</h1>
           <h2 class="hero__subtitle">Собирайте ПК с открытым <br> исходным кодом знаний</h2>
-          <p class="hero__description">Первый конструктор с AI-помощником, 2.5D визуализацией <br> и сообществом сборщиков
+          <p class="hero__description">Первый конструктор с AI-помощником, 2.5D визуализацией <br> и сообществом
+            сборщиков
           </p>
 
           <div class="hero__buttons">
@@ -110,31 +111,25 @@
       </div>
     </section>
 
-    <section class="features">
+    <section class="features-slider">
       <div class="container">
-        <h2 class="features__title">Возможности PCVerseBuild</h2>
-        <p class="features__subtitle">Всё, что нужно для идеальной сборки</p>
-        <div class="slider">
-          <div class="slider__track" id="sliderTrack">
+        <div class="features-slider__header">
+          <h2 class="features-slider__title">Возможности PCVerseBuild</h2>
+          <p class="features-slider__subtitle">Всё, что нужно для идеальной сборки</p>
+        </div>
 
-            <div class="slider__slide">
-              <div class="slider__icon slider__icon_blue">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path
-                    d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
-                  <path d="m3.3 7 8.7 5 8.7-5" />
-                  <path d="M12 22V12" />
-                </svg>
-              </div>
-              <h3 class="slider__title">2.5D Визуализация</h3>
-              <p class="slider__text">Смотрите вашу сборку в фотореалистичном 2.5D с 5 разными ракурсами. Интерактивная
-                модель позволяет увидеть каждый компонент в деталях.</p>
-              <a href="#" class="slider__link">Узнать больше →</a>
+        <div class="slider-wrapper">
+          <div class="slider">
+            <div class="slider__pattern"></div>
+
+            <div class="slider__image-placeholder">
+              <img class="slider__image" id="sliderImage" src="assets/images/images.jpg" alt="Демо фичи" />
             </div>
 
-            <div class="slider__slide">
-              <div class="slider__icon slider__icon_purple">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <div class="slider__content">
+              <div class="slider__icon-badge" id="iconBadge">
+                <svg id="contentIcon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
                   <path d="M12 8V4H8" />
                   <rect width="16" height="12" x="4" y="8" rx="2" />
                   <path d="M2 14h2" />
@@ -143,52 +138,95 @@
                   <path d="M9 13v2" />
                 </svg>
               </div>
-              <h3 class="slider__title">AI-Помощник</h3>
-              <p class="slider__text">Умный помощник запоминает контекст диалога, понимает "это" без объяснений и
-                помогает подобрать идеальные компоненты под ваш бюджет.</p>
-              <a href="#" class="slider__link">Узнать больше →</a>
+              <h3 class="slider__heading" id="featureTitle">AI-помощник</h3>
+              <p class="slider__description" id="featureDescription">Умный ассистент анализирует ваши требования и
+                подбирает оптимальные компоненты с учётом совместимости и бюджета</p>
             </div>
 
-            <div class="slider__slide">
-              <div class="slider__icon slider__icon_green">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
-                  <path d="m9 11 3 3L22 4" />
+            <button class="slider__arrow slider__arrow_left" id="prevBtn" aria-label="Previous">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="slider__arrow slider__arrow_right" id="nextBtn" aria-label="Next">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <div class="slider-dots" id="dotsContainer">
+            <button class="slider-dot slider-dot_active" data-index="0"></button>
+            <button class="slider-dot" data-index="1"></button>
+            <button class="slider-dot" data-index="2"></button>
+            <button class="slider-dot" data-index="3"></button>
+            <button class="slider-dot" data-index="4"></button>
+          </div>
+
+          <div class="slider-thumbnails" id="thumbnailsContainer">
+            <button class="thumbnail thumbnail_active" data-index="0">
+              <div class="thumbnail__icon-wrapper">
+                <svg class="thumbnail__icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M12 8V4H8" />
+                  <rect width="16" height="12" x="4" y="8" rx="2" />
+                  <path d="M2 14h2" />
+                  <path d="M20 14h2" />
+                  <path d="M15 13v2" />
+                  <path d="M9 13v2" />
                 </svg>
               </div>
-              <h3 class="slider__title">Умная совместимость</h3>
-              <p class="slider__text">Автоматическая проверка всех компонентов на совместимость. Система предупредит о
-                конфликтах и предложит альтернативные решения.</p>
-              <a href="#" class="slider__link">Узнать больше →</a>
-            </div>
-
-            <div class="slider__slide">
-              <div class="slider__icon slider__icon_orange">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <span class="thumbnail__title">AI-помощник</span>
+              <div class="thumbnail__glow"></div>
+            </button>
+            <button class="thumbnail" data-index="1">
+              <div class="thumbnail__icon-wrapper">
+                <svg class="thumbnail__icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                  <path d="M12 22V12" />
+                  <path d="M3.3 7 12 12l8.7-5" />
+                </svg>
+              </div>
+              <span class="thumbnail__title">2.5D</span>
+              <div class="thumbnail__glow"></div>
+            </button>
+            <button class="thumbnail" data-index="2">
+              <div class="thumbnail__icon-wrapper">
+                <svg class="thumbnail__icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+              </div>
+              <span class="thumbnail__title">Ручные цены</span>
+              <div class="thumbnail__glow"></div>
+            </button>
+            <button class="thumbnail" data-index="3">
+              <div class="thumbnail__icon-wrapper">
+                <svg class="thumbnail__icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
                   <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                   <circle cx="9" cy="7" r="4" />
                   <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
                   <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                 </svg>
               </div>
-              <h3 class="slider__title">Сообщество</h3>
-              <p class="slider__text">Делитесь своими сборками, участвуйте в конкурсах, получайте оценки и комментарии
-                от других энтузиастов.</p>
-              <a href="#" class="slider__link">Узнать больше →</a>
-            </div>
-
-            <div class="slider__slide">
-              <div class="slider__icon slider__icon_red">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
-                  <rect x="2" y="6" width="14" height="12" rx="2" />
+              <span class="thumbnail__title">Сообщество</span>
+              <div class="thumbnail__glow"></div>
+            </button>
+            <button class="thumbnail" data-index="4">
+              <div class="thumbnail__icon-wrapper">
+                <svg class="thumbnail__icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
               </div>
-              <h3 class="slider__title">Интерактивные гайды</h3>
-              <p class="slider__text">Обучающие видео с возможностью задавать вопросы AI. Смотрите гайды и сразу
-                применяйте знания в конструкторе.</p>
-              <a href="#" class="slider__link">Узнать больше →</a>
-            </div>
+              <span class="thumbnail__title">Совместимость</span>
+              <div class="thumbnail__glow"></div>
+            </button>
           </div>
         </div>
       </div>
