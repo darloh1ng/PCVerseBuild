@@ -4,9 +4,12 @@
   --color-border-default: #30363d;
   --color-fg-default: #e6edf3;
   --color-fg-muted: #8b949e;
-  --color-accent-emphasis: #58a6ff;
+  --color-accent-blue: #0969da;
   --color-success-emphasis: #3fb950;
   --color-done-emphasis: #a371f7;
   --color-slider-bg: #1a1a1a;
   --color-slider-border: #404040;
+  --color-arrow-border: #404040;
+  --color-arrow-bg: rgba(255, 255, 255, 0.85);
+  --color-overlay-dark: rgba(0, 0, 0, 0.6);
 }

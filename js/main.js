@@ -221,3 +221,7 @@ document.querySelectorAll('.thumbnail').forEach((thumb, index) => {
 // Инициализация
 updateSlide(0);
 startAutoplay();
+
+
+
+
