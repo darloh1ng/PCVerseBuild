@@ -23,7 +23,7 @@ button {
   border-bottom: 1px solid var(--color-border-default);
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 30;
 }
 
 .header__content {
@@ -513,5 +513,16 @@ button {
 }
 
 /* thumbnails */
+.slider-thumbnails {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 2rem;
+}
 
-
+.thumbnail {
+  padding: 0.75rem;
+  background-color: var(--color-thumbnail-bg);
+  border: 2px solid #0000;
+  border-radius: 0.875rem;
+}
