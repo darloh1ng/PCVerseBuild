@@ -65,8 +65,8 @@ const features = [
     description: "Впишите реальную цену компонента с Авито или Юлы...",
     color: "#059669",
     bgColor: "#ECFDF5",
-    watermarkPath: '<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',
-    iconPath: '<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>'
+    watermarkPath: '<path d="M12 2v20M17 7H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>',  // доллар
+    iconPath: '<path d="M12 2v20M17 7H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>'     // доллар
   },
   {
     title: "Сообщество",
@@ -130,7 +130,6 @@ function updateSlide(index) {
     if (i === currentSlide) {
       thumb.classList.add('thumbnail_active');
       thumb.style.borderColor = feature.color;
-      // Убрал изменение backgroundColor для wrapper
       const icon = thumb.querySelector('.thumbnail__icon');
       if (icon) icon.style.color = feature.color;
       const title = thumb.querySelector('.thumbnail__title');
