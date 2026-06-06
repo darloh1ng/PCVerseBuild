@@ -560,3 +560,49 @@ button {
   text-align: center;
   line-height: 1.25;
 }
+
+/* --- workflow --- */
+.workflow {
+  padding-block: 4rem;
+  background-color: var(--color-canvas-subtle);
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.workflow__title {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--color-fg-default);
+}
+
+.workflow__steps {
+  padding: 2.5rem;
+  border: 2px solid var(--color-border-default);;
+  border-radius: 0.875rem;
+  background-color: #0d1117;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.workflow__step {
+  position: relative;
+  text-align: center;
+}
+
+.workflow__step:not(:last-child)::after {
+  content: '→';
+  position: absolute;
+  transform: scale(1.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 3rem;
+  left: calc(50% + 32px);
+  width: calc(100% - 64px);
+  font-size: 1.5rem;
+  color: var(--color-border-default);
+}
+
