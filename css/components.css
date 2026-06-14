@@ -770,6 +770,7 @@ button {
   border-radius: 0.7rem;
   color: white;
   text-align: center;
+  user-select: none;
 }
 
 .video-card__play {
