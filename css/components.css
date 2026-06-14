@@ -773,6 +773,11 @@ button {
   user-select: none;
 }
 
+.video-card__button:hover {
+  background-color: var(--color-accent-blue-hover); 
+  transition: all 0.2s ease;
+}
+
 .video-card__play {
   position: absolute;
   top: 50%;
