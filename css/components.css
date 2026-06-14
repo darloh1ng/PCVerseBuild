@@ -847,7 +847,7 @@ button {
   font-size: 0.7rem;
   font-weight: 600;
   padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
+  border-radius: 0.25rem;п
 }
 
 .article-card__description {
@@ -869,15 +869,4 @@ button {
   color: var(--color-fg-muted);
 }
 
-.article-card__link {
-  color: var(--color-accent-blue);
-  text-decoration: none;
-  font-size: 0.875rem;
-  font-weight: 500;
-  transition: opacity 0.2s;
-}
 
-.article-card__link:hover {
-  opacity: 0.8;
-  text-decoration: underline;
-}

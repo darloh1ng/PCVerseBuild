@@ -190,3 +190,10 @@ document.querySelectorAll('.thumbnail').forEach((thumb, index) => {
 
 updateSlide(0);
 startAutoplay();
+
+document.querySelectorAll('.article-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const url = card.getAttribute('data-url');
+    if (url) window.open(url, '_blank');
+  });
+});
