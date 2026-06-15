@@ -875,4 +875,121 @@ button {
   color: var(--color-fg-muted);
 }
 
+/* --- popular-builds --- */
+.popular-builds {
+  padding-block: 4rem;
+  border-bottom: 1px solid var(--color-border-default);
+  background: var(--color-canvas-subtle);
+}
+
+.popular-builds__title {
+  margin-bottom: 0.75rem;
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--color-fg-default);
+}
+
+.popular-builds__subtitle {
+  font-size: 1.125rem;
+  text-align: center;
+  color: var(--color-fg-muted);
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+
+.popular-builds__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.build-card {
+  background: var(--color-canvas-default);
+  border: 2px solid var(--color-border-default);
+  border-radius: 0.7rem;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.build-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
+}
+
+.build-card__preview {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.build-card__placeholder {
+  text-align: center;
+  color: white;
+  opacity: 20%;
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.build-card__preview-label {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+
+.build-card__badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  backdrop-filter: blur(4px);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding-block: 0.25rem;
+  padding-inline: 0.5rem;
+  border-radius: 0.25rem;
+  line-height: 1.3;
+}
+
+.build-card__badge_public {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.build-card__badge_featured {
+  background: rgba(255, 149, 0, 0.6);
+}
+
+.build-card__content {
+  padding: 1.25rem;
+}
+
+.build-card__title {
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: var(--color-fg-default);
+}
+
+.build-card__description {
+  font-size: 0.875rem;
+  color: var(--color-fg-muted);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
 
