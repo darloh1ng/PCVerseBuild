@@ -5,8 +5,9 @@
   --color-fg-default: #e6edf3;
   --color-fg-muted: #8b949e;
   --color-accent-blue: #0969da;
-  --color-success-emphasis: #3fb950;
-  --color-done-emphasis: #a371f7;
+  --color-success-emphasis-hover: rgba(26, 127, 55, 0.9);
+  --color-success-emphasis: #1a7f37;
+  --color-done-emphasis: #7c3aed;
   --color-slider-bg: #1a1a1a;
   --color-slider-border: #404040;
   --color-arrow-border: #404040;
