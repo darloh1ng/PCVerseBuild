@@ -1178,6 +1178,7 @@ button {
 }
 
 .cta__btn {
+  margin-top: 1rem;
   padding-block: 0.75rem;
   padding-inline: 1.5rem;
   font-size: 1rem;
@@ -1243,3 +1244,4 @@ button {
 .cta__feature-dot_blue {
   background: var(--color-accent-blue);
 }
+
