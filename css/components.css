@@ -255,7 +255,7 @@ button {
   padding-inline: 1.5rem;
   font-weight: 600;
   border-radius: 0.6rem;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .hero__btn_primary {
@@ -266,12 +266,14 @@ button {
 
 .hero__btn_primary:hover {
   background: var(--color-success-emphasis-hover);
+  transform: translateY(-1px);
 }
 
 .hero__btn_secondary {
   color: var(--color-fg-default);
   background: transparent;
   border: 1px solid var(--color-border-default);
+  transform: translateY(-1px);
 }
 
 .hero__btn_secondary:hover {
@@ -1196,7 +1198,7 @@ button {
 
 .cta__btn_primary:hover {
   background: var(--color-success-emphasis-hover);
-  transform: translateY(-1прpx);
+  transform: translateY(-1px);
 }
 
 .cta__btn_secondary {
